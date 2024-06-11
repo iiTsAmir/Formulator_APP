@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditingFragment">
+
+    <TextView
+        android:id="@+id/editingLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/top_box"
+        android:gravity="center"
+        android:paddingHorizontal="30dp"
+        android:paddingTop="3dp"
+        android:paddingBottom="6dp"
+        android:text="E d i t i n g"
+        android:textColor="@color/white_green"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:typeface="serif"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </TextView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@drawable/shadow_top"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/editingTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="45dp"
+        android:layout_marginBottom="8dp"
+        android:text="Edit X Component :"
+        android:textSize="22dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottomFrame" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="110dp"
+        android:background="@drawable/bottom_box">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/editingNameBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="7dp"
+
+                    android:background="@drawable/white_stroke"
+                    android:gravity="center_vertical"
+                    android:hint="Name"
+                    android:inputType="text"
+                    android:paddingLeft="15dp"
+                    android:singleLine="true"
+                    android:textColor="@color/white_green"
+                    android:textColorHint="@color/white_hint"
+                    android:textSize="20dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/editingAddBtn"
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="5dp"
+
+                        android:background="@drawable/button_bg"
+                        android:backgroundTint="@color/scs"
+                        android:gravity="center"
+                        android:padding="0dp"
+                        android:text="+"
+                        android:textColor="@color/white_green"
+                        android:textSize="30dp" />
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <EditText
+                            android:id="@+id/editingUnitNumberBox"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+
+                            android:background="@drawable/white_stroke"
+                            android:gravity="center_vertical"
+                            android:hint="value"
+                            android:inputType="numberDecimal"
+                            android:paddingLeft="15dp"
+                            android:singleLine="true"
+                            android:textColor="@color/white_green"
+                            android:textColorHint="@color/white_hint"
+                            android:textSize="20dp"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintWidth_percent=".49" />
+
+                        <EditText
+                            android:id="@+id/editingUnitNameBox"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+
+                            android:background="@drawable/white_stroke"
+                            android:gravity="center_vertical"
+                            android:hint="Unit"
+                            android:inputType="text"
+                            android:paddingLeft="15dp"
+                            android:singleLine="true"
+                            android:textColor="@color/white_green"
+                            android:textColorHint="@color/white_hint"
+                            android:textSize="20dp"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintWidth_percent=".49" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/divider" />
+
+            <ScrollView
+                android:id="@+id/SV"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/editingLL"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+
+            </ScrollView>
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/editingSaveBtn"
+            android:layout_width="0dp"
+            android:layout_height="44dp"
+            android:layout_marginVertical="8dp"
+            android:background="@drawable/button_bg"
+            android:backgroundTint="@color/scs"
+            android:text="Save"
+            android:textColor="@color/white_green"
+            android:textSize="20dp"
+            app:layout_constraintHorizontal_bias=".94"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintWidth_percent=".44"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <FrameLayout
+        android:id="@+id/bottomFrame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="110dp">
+
+        <View
+            android:layout_width="45dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:background="@drawable/shadow_right" />
+
+        <View
+            android:layout_width="45dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:background="@drawable/shadow_left" />
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

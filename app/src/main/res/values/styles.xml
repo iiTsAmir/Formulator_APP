@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="CustomAlertDialogStyle" parent="Theme.AppCompat.Dialog">
+        <item name="android:textColor">@color/white_green</item>
+        <item name="android:background">@color/low_black</item>
+        <item name="android:windowMinWidthMinor">350dp</item>
+    </style>
+</resources>

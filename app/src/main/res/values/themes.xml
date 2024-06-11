@@ -1,0 +1,21 @@
+<resources>
+
+    <style name="Theme.Formulator" parent="Theme.MaterialComponents.NoActionBar">
+        <item name="colorPrimary">@color/green</item>                       <!-- action bar & buttons -->
+        <item name="colorOnPrimary">@color/white_green</item>               <!-- button txt -->
+        <item name="colorSecondary">@color/light_green</item>               <!-- select txt box -->
+
+        <item name="android:statusBarColor">@color/dark_green</item>        <!-- Status bar -->
+        <item name="android:textColor">@color/black_green</item>            <!-- text Color -->
+        <item name="android:textColorHint">@color/black_hint</item>         <!-- Hint text Color -->
+        <item name="color">@color/dark_green</item>                         <!-- frames color -->
+        <item name="android:colorBackground">@color/white_green</item>      <!-- Background color -->
+        <item name="android:navigationBarColor">@color/black_green</item>   <!-- navigationBar Color -->
+        <item name="android:textCursorDrawable">@null</item>                <!-- text Cursor -->
+    </style>
+
+    <style name="TextViewStyle" parent="android:Widget.TextView">           <!-- navigation drawer text style -->
+        <item name="android:textSize">15sp</item>
+    </style>
+
+</resources>
